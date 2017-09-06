@@ -121,7 +121,7 @@
 .heading {
   padding-top: 100px;
   padding-left: 55px;
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Avenir Next';
   font-weight: 600;
 }
 
@@ -767,7 +767,6 @@
 
 .form-wrapper {
   display: block;
-  width: 760px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 35px;
@@ -789,7 +788,7 @@
 
 .services-form-header {
   display: block;
-  width: 800px;
+  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 5px;
@@ -917,14 +916,12 @@
   .guide-text-field {
     width: 320px;
   }
-  .guide-form {
-    margin-top: 40px;
-  }
   .form-wrapper {
     width: auto;
   }
   .services-form-header {
-    width: 350px;
+    width: 330px;
+    margin-top: 8px;
   }
   .services-form-header.long {
     width: 760px;
