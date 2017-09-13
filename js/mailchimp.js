@@ -3,7 +3,7 @@ $("#guide-email-form").submit(function (e) {
     e.stopPropagation();
 
     var email = this.elements.email.value;
-    var name = this.elements.email.name;
+    var name = this.elements.name.value;
 
     $.ajax({
         type: "POST",
@@ -25,7 +25,7 @@ $("#service-email-form").submit(function (e) {
     e.stopPropagation();
 
     var email = this.elements.email.value;
-    var name = this.elements.email.name;
+    var name = this.elements.name.value;
 
     $.ajax({
         type: "POST",
