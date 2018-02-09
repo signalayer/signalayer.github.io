@@ -47,12 +47,17 @@
    
 <!--- Tooltip player -->
 <script type='text/javascript'>
-(function(d, s){
-var t = d.createElement(s), e = d.getElementsByTagName(s)[0];
-t.type = "text/javascript"; e.parentNode.insertBefore(t,e);
-t.async = "async";
-t.src = "https://cdn.tooltip.io/static/player.js?apiKey=JU8w14I5vnBSXuQP-9iVdquSw_bMa7pR6SQa092EMCx";
-})(document, "script");
+window.Tooltip||function(t,e){var o={
+url:"https://cdn.tooltip.io/static/player.js",
+key:"JU8w14I5vnBSXuQP-9iVdquSw_bMa7pR6SQa092EMCx",
+async:true
+};window.Tooltip={cs:[],_apiKey:o.key};for( 
+var r=["identify","goal","updateUserData","start","stop","refresh","show","hide","on"],
+i={},n=0;n<r.length;n++){var a=r[n];i[a]=function(t){return function(){var
+e=Array.prototype.slice.call(arguments);
+window.Tooltip.cs.push({method:t,args:e})}}(a)}window.Tooltip.API=i;var
+n=t.createElement(e),s=t.getElementsByTagName(e)[0];
+n.type="text/javascript",n.async=o.async,s.parentNode.insertBefore(n,s),n.src=o.url}(document,"script");
 </script>
 <!--- Tooltip player -->
     
@@ -66,8 +71,8 @@ t.src = "https://cdn.tooltip.io/static/player.js?apiKey=JU8w14I5vnBSXuQP-9iVdquS
             <div class="w-dropdown-toggle">
               <div class="nav-link">Resources</div>
             </div>
-            <nav class="dropdown-list w-dropdown-list"><a class="nav-dropdown-link w-dropdown-link" href="#">Signalayer Blog</a><a class="nav-dropdown-link w-dropdown-link" href="guide.html">On-site Marketing Guide</a><a class="nav-dropdown-link w-dropdown-link" href="professional.html">Professional Services</a></nav>
-          </div><a class="nav-link sign-in w-nav-link" href="#">Sign in</a><a class="demo nav-link w-nav-link" href="https://calendly.com/signalayer/demo/" target="_blank">SCHEDULE&nbsp;A DEMO</a></nav>
+            <nav class="dropdown-list w-dropdown-list"><a class="nav-dropdown-link w-dropdown-link" href="https://blog.signalayer.com">Signalayer Blog</a><a class="nav-dropdown-link w-dropdown-link" href="guide.html">On-site Marketing Guide</a><a class="nav-dropdown-link w-dropdown-link" href="professional.html">Professional Services</a></nav>
+          </div><a class="nav-link sign-in w-nav-link" href="#">Sign in</a><a class="demo nav-link w-nav-link" href="https://calendly.com/signalayer/demo/" target="_blank">SCHEDULE A DEMO</a></nav>
         <div class="menu-button w-nav-button">
           <div class="w-icon-nav-menu"></div>
         </div>
