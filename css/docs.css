@@ -205,6 +205,10 @@
     line-height: 26px;
 }
 
+.docs-layout .docs-container p.text-helper-warning code {
+    font-weight: bold;
+}
+
 .docs-layout .docs-container article {
     border-top: 1px solid #ddd;
     margin-bottom: 60px;
