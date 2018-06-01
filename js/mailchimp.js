@@ -7,7 +7,7 @@ $("#guide-email-form").submit(function (e) {
 
     $.ajax({
         type: "POST",
-        url: "https://tooltip.io/api/sm-list/",
+        url: "https://dashboard.signalayer.com/api/sm-list/",
         crossDomain: true,
         data: {email: email, name: name, list: "guide"},
         success: function () {
@@ -29,7 +29,7 @@ $("#service-email-form").submit(function (e) {
 
     $.ajax({
         type: "POST",
-        url: "https://tooltip.io/api/sm-list/",
+        url: "https://dashboard.signalayer.com/api/sm-list/",
         crossDomain: true,
         data: {email: email, name: name, list: "service"},
         success: function () {
