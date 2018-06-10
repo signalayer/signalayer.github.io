@@ -73,6 +73,9 @@ n.type="text/javascript",n.async=o.async,s.parentNode.insertBefore(n,s),n.src=o.
     Smooch.init({appId: '56bdf53de4e4b52f00aa6d44'}).then(function() {
     });
 </script>
+<script>
+	(()=>{window.onhashchange = ()=>{if(document.location.hash.indexOf("sm") != -1){Smooch.open();}}})()
+</script>
   <!--- Smooch widget -->
 </head>
 <body>
