@@ -1,5 +1,5 @@
 .hero-section {
-  border-radius: 4px;
+  border-radius: 0;
   background-color: #070707;
   font-family: 'Varela Round', sans-serif;
   color: #fff;
@@ -190,6 +190,21 @@
   line-height: 22px;
 }
 
+.brand-heading {
+  display: block;
+  width: 740px;
+  margin: 0px auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Montserrat, sans-serif;
+  color: #333;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
 .brand-image {
   display: block;
   max-width: 100%;
@@ -262,6 +277,8 @@
 .brands-section {
   display: block;
   background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .image-heading {
@@ -362,9 +379,7 @@
 .button {
   display: block;
   width: 240px;
-  margin-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 50px auto 150px;
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 4px;
