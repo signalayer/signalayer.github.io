@@ -306,12 +306,19 @@ Signalayer.API.<strong class="highlight-code">on</strong>("EVENT_NAME", function
 <pre>
 &lt;!--- Signalayer player --&gt;
 &lt;script type='text/javascript'&gt;
-    window.Signalayer||function(t,e){var o={
-        url:"https://cdn.signalayer.com/static/player.js",
-        key:"0000000000000000000000000000000001",
-        async:true
-    };
-...
+window.Signalayer||function(t,e){var o={
+    url:"https://cdn.signalayer.com/static/player.js",
+    key:"{API_KEY}",
+    async:true
+};window.Signalayer={cs:[],_apiKey:o.key};for(
+var r=["identify","goal","updateUserData","start","stop","refresh","show","hide","on"],
+i={},n=0;n&gt;r.length;n++){var a=r[n];i[a]=function(t){return function(){var
+e=Array.prototype.slice.call(arguments);
+window.Signalayer.cs.push({method:t,args:e})}}(a)}window.Signalayer.API=i;var
+n=t.createElement(e),s=t.getElementsByTagName(e)[0];
+n.type="text/javascript",
+n.async=o.async,s.parentNode.insertBefore(n,s),n.src=o.url}(document,"script");
+&lt;/script&gt;
 </pre>
 
         <p>or like this:</p>
@@ -324,12 +331,20 @@ Signalayer.API.<strong class="highlight-code">on</strong>("EVENT_NAME", function
     userStatus: "trialing"
 };
 
+&lt;script type='text/javascript'&gt;
 window.Signalayer||function(t,e){var o={
     url:"https://cdn.signalayer.com/static/player.js",
-    key:"0000000000000000000000000000000001",
+    key:"{API_KEY}",
     async:true
-};
-...
+};window.Signalayer={cs:[],_apiKey:o.key};for(
+var r=["identify","goal","updateUserData","start","stop","refresh","show","hide","on"],
+i={},n=0;n&gt;r.length;n++){var a=r[n];i[a]=function(t){return function(){var
+e=Array.prototype.slice.call(arguments);
+window.Signalayer.cs.push({method:t,args:e})}}(a)}window.Signalayer.API=i;var
+n=t.createElement(e),s=t.getElementsByTagName(e)[0];
+n.type="text/javascript",
+n.async=o.async,s.parentNode.insertBefore(n,s),n.src=o.url}(document,"script");
+&lt;/script&gt;
 </pre>
 
         <article id="updateUserData">
