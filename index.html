@@ -72,6 +72,8 @@ n.type="text/javascript",n.async=o.async,s.parentNode.insertBefore(n,s),n.src=o.
 </script>
 <script>
     Smooch.init({appId: '56bdf53de4e4b52f00aa6d44'}).then(function() {
+            // HOTFIX: bug with Smooch icon background
+	    document.getElementById("web-messenger-container").contentWindow.document.getElementById("messenger-button").style.backgroundColor = "#7c7ec3";
     });
 </script>
 <script>
