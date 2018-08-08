@@ -49,12 +49,9 @@ function proceedDownloading() {
 function waitForElement(cb) {
     var doneForm = $('.w-form-done')[0];
     var failForm = $('.w-form-fail')[0];
-    
-    console.log(doneForm.style.display);
-    console.log(failForm.style.display);
 
-    if ((doneForm.style.display != 'none') || (failForm.style.display != 'none')) {
-        cb((doneForm.style.display != 'none'));
+    if ((doneForm.style.display == 'block') || (failForm.style.display == 'block')) {
+        cb((doneForm.style.display == 'block'));
     } else {
         setTimeout(function () {
             waitForElement(cb);
@@ -65,7 +62,6 @@ function waitForElement(cb) {
 
 $("[name='email-form']").submit(function (e) {
     waitForElement(function (done) {
-        console.log('wait result ->' + done);
         if (done) {
             proceedDownloading();
         }
