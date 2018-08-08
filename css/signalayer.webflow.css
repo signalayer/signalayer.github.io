@@ -1556,6 +1556,32 @@
   .image-2 {
     margin-left: 0px;
   }
+
+  .quote-image {
+    float: none;
+    margin: auto;
+  }
+
+  .case-study-title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .quote-title {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .image-9 {
+    text-align: center;
+    float: none;
+    margin: auto;
+  }
+
+  .read-more-link {
+    text-align: center;
+  }
+
   .hero-subheader {
     width: 290px;
     margin-bottom: 35px;
@@ -1764,9 +1790,11 @@
   }
   .case-study-title {
     display: block;
-    width: 300px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .case-study-title.long {
     width: 300px;
