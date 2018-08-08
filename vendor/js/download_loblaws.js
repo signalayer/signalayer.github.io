@@ -1,5 +1,6 @@
 var REDIRECT_URL = 'demo.html';
 var GUIDE_URL = 'vendor/files/Signalayer_Case study_Loblaws.pdf';
+var FILE_NAME = "Signalayer_Case study_Loblaws";
 
 
 /* Helper function */
@@ -36,7 +37,7 @@ function download_file(fileURL, fileName) {
 
 
 function proceedDownloading() {
-    download_file(GUIDE_URL, "Popup marketing guide");
+    download_file(GUIDE_URL, FILE_NAME);
 
     setTimeout(function () {
         var a = document.createElement('a');
