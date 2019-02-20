@@ -5,11 +5,13 @@
 <head>
     <meta charset="utf-8">
     <title>Signalayer - Popup Marketing Guide</title>
-    <meta content="10 Rules for Creating Highly Engaging Popups. Free eBook. Based in industry best practices and UX principles. Case studies from Virgin  Atlantic, Bud Light, Harry&#x27;s and other top brands."
-          name="description">
+    <meta
+        content="10 Rules for Creating Highly Engaging Popups. Free eBook. Based in industry best practices and UX principles. Case studies from Virgin  Atlantic, Bud Light, Harry&#x27;s and other top brands."
+        name="description">
     <meta content="Signalayer - Popup Marketing Guide" property="og:title">
-    <meta content="10 Rules for Creating Highly Engaging Popups. Free eBook. Based in industry best practices and UX principles. Case studies from Virgin  Atlantic, Bud Light, Harry&#x27;s and other top brands."
-          property="og:description">
+    <meta
+        content="10 Rules for Creating Highly Engaging Popups. Free eBook. Based in industry best practices and UX principles. Case studies from Virgin  Atlantic, Bud Light, Harry&#x27;s and other top brands."
+        property="og:description">
     <meta content="summary" name="twitter:card">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Webflow" name="generator">
@@ -19,7 +21,8 @@
     <link href="css/custom.css" rel="stylesheet" type="text/css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
-    <script type="text/javascript">WebFont.load({google: {families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]}});</script>
+    <script
+        type="text/javascript">WebFont.load({google: {families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]}});</script>
     <!-- [if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
             type="text/javascript"></script><![endif] -->
@@ -31,13 +34,17 @@
     <link href="images/Webclip.png" rel="apple-touch-icon">
 
     <!--- CUSTOM SCRIPTS ---------------->
-    <meta name="google-site-verification" content="VqUZ1h9cPmtmJCJafV10PmFoo-w3a87BivnehCwnyRY" />
+    <meta name="google-site-verification" content="VqUZ1h9cPmtmJCJafV10PmFoo-w3a87BivnehCwnyRY"/>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106591908-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
         gtag('config', 'UA-106591908-1');
     </script>
@@ -49,44 +56,96 @@
         window['_fs_host'] = 'fullstory.com';
         window['_fs_org'] = '3GMR2';
         window['_fs_namespace'] = 'FS';
-        (function(m,n,e,t,l,o,g,y){
-            if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-            g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
-            o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-            y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-            g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
-            y="rec";g.shutdown=function(i,v){g(y,!1)};g.restart=function(i,v){g(y,!0)};
-            g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-            g.clearUserCookie=function(){};
-        })(window,document,window['_fs_namespace'],'script','user');
+        (function (m, n, e, t, l, o, g, y) {
+            if (e in m) {
+                if (m.console && m.console.log) {
+                    m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+                }
+                return;
+            }
+            g = m[e] = function (a, b) {
+                g.q ? g.q.push([a, b]) : g._api(a, b);
+            };
+            g.q = [];
+            o = n.createElement(t);
+            o.async = 1;
+            o.src = 'https://' + _fs_host + '/s/fs.js';
+            y = n.getElementsByTagName(t)[0];
+            y.parentNode.insertBefore(o, y);
+            g.identify = function (i, v) {
+                g(l, {uid: i});
+                if (v) g(l, v)
+            };
+            g.setUserVars = function (v) {
+                g(l, v)
+            };
+            y = "rec";
+            g.shutdown = function (i, v) {
+                g(y, !1)
+            };
+            g.restart = function (i, v) {
+                g(y, !0)
+            };
+            g.identifyAccount = function (i, v) {
+                o = 'account';
+                v = v || {};
+                v.acctId = i;
+                g(o, v)
+            };
+            g.clearUserCookie = function () {
+            };
+        })(window, document, window['_fs_namespace'], 'script', 'user');
     </script>
     <!--- Fullstory -->
     <!--- Signalayer player -->
     <script type='text/javascript'>
-        window.Signalayer||function(t,e){var o={
-            url:"https://cdn.signalayer.com/static/player.js",
-            key:"JU8w14I5vnBSXuQP-9iVdquSw_bMa7pR6SQa092EMCx",
-            async:true
-        };window.Signalayer={cs:[],_apiKey:o.key};for(
-                var r=["identify","goal","updateUserData","start","stop","refresh","show","hide","on"],
-                        i={},n=0;n<r.length;n++){var a=r[n];i[a]=function(t){return function(){var
-                e=Array.prototype.slice.call(arguments);
-            window.Signalayer.cs.push({method:t,args:e})}}(a)}window.Signalayer.API=i;var
-                n=t.createElement(e),s=t.getElementsByTagName(e)[0];
-            n.type="text/javascript",n.async=o.async,s.parentNode.insertBefore(n,s),n.src=o.url}(document,"script");
+        window.Signalayer || function (t, e) {
+            var o = {
+                url: "https://cdn.signalayer.com/static/player.js",
+                key: "JU8w14I5vnBSXuQP-9iVdquSw_bMa7pR6SQa092EMCx",
+                async: true
+            };
+            window.Signalayer = {cs: [], _apiKey: o.key};
+            for (
+                var r = ["identify", "goal", "updateUserData", "start", "stop", "refresh", "show", "hide", "on"],
+                    i = {}, n = 0; n < r.length; n++) {
+                var a = r[n];
+                i[a] = function (t) {
+                    return function () {
+                        var
+                            e = Array.prototype.slice.call(arguments);
+                        window.Signalayer.cs.push({method: t, args: e})
+                    }
+                }(a)
+            }
+            window.Signalayer.API = i;
+            var
+                n = t.createElement(e), s = t.getElementsByTagName(e)[0];
+            n.type = "text/javascript", n.async = o.async, s.parentNode.insertBefore(n, s), n.src = o.url
+        }(document, "script");
     </script>
     <!--- Signalayer player -->
 
     <!-- Facebook Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '634962846878038');
         fbq('track', 'PageView');
     </script>
@@ -144,6 +203,10 @@
         Smooch.init({appId: '56bdf53de4e4b52f00aa6d44'}).then(function () {
             // HOTFIX: bug with Smooch icon background
             document.getElementById("web-messenger-container").contentWindow.document.getElementById("messenger-button").style.backgroundColor = "#7c7ec3";
+
+            Signalayer.API.on("start_smooch", function () {
+                Smooch.open();
+            })
         });
     </script>
     <script>
@@ -167,12 +230,15 @@
 
 <!-- Twitter universal website tag code -->
 <script>
-    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
-            a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+    !function (e, t, n, s, u, a) {
+        e.twq || (s = e.twq = function () {
+            s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+        }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+            a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+    }(window, document, 'script');
     // Insert Twitter Pixel ID and Standard Event data below
-    twq('init','nzjxy');
-    twq('track','PageView');
+    twq('init', 'nzjxy');
+    twq('track', 'PageView');
 </script>
 <!-- End Twitter universal website tag code -->
 
@@ -181,15 +247,20 @@
     _linkedin_partner_id = "408580";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
     window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-</script><script type="text/javascript">
-    (function(){var s = document.getElementsByTagName("script")[0];
+</script>
+<script type="text/javascript">
+    (function () {
+        var s = document.getElementsByTagName("script")[0];
         var b = document.createElement("script");
-        b.type = "text/javascript";b.async = true;
+        b.type = "text/javascript";
+        b.async = true;
         b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-        s.parentNode.insertBefore(b, s);})();
+        s.parentNode.insertBefore(b, s);
+    })();
 </script>
 <noscript>
-    <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=408580&fmt=gif" />
+    <img height="1" width="1" style="display:none;" alt=""
+         src="https://dc.ads.linkedin.com/collect/?pid=408580&fmt=gif"/>
 </noscript>
 <!---- End Linked In Snippet ---->
 </body>
