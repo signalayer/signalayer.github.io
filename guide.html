@@ -205,6 +205,7 @@
             document.getElementById("web-messenger-container").contentWindow.document.getElementById("messenger-button").style.backgroundColor = "#7c7ec3";
 
             Signalayer.API.on("start_smooch", function () {
+                console.log('start event');
                 Smooch.open();
             })
         });
