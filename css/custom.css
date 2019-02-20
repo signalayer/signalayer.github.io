@@ -11,3 +11,7 @@
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
 }
+
+.guide-page #web-messenger-container {
+  left: 40px !important;
+}
